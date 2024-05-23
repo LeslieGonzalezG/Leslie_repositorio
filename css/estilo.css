@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+@font-face {
+    font-family: "Melodrama-Regular";
+    src: url(../Melodrama_Complete/Melodrama-Regular.otf);
+}
+
+h1{
+    font-family: "Melodrama-Regular";
+    text-align: center;
+    
+}
+
+h2{
+    font-family: "Melodrama-Regular";
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+.logo_Alquimistica{
+    width: 200px;
+    padding: 2rem;
+    align-items: center;
+    
+}   
+
+/*Estilo grid_index*/
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1.3fr 0.6fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "HEADER HEADER"
+      "Main Aside"
+      "Article Article"
+      "Footer Footer"; 
+  }
+  .HEADER { grid-area: HEADER;
+   height:200px;
+   background-color: #f4eef7;
+   padding: 1.2rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   
+
+  }
+
+  
+
+  
+
+  .nav-Header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .nav-Header ul li{
+    border-radius: 10px;
+    
+  }
+
+  .nav-Header ul li a{
+    color: #491b74;
+    text-decoration: none;
+    padding: 0.7rem;
+    
+  }
+
+
+  .Main { grid-area: Main;
+  background-color: #ffffff;
+   
+ }
+  .Aside { grid-area: Aside;
+    display: flex;
+    justify-content: right; }
+
+  .Article { grid-area: Article;
+   padding: 3rem;
+    display: inline-block; 
+    justify-content: space-around;}
+
+    .card{
+      height:auto;
+      display: inline-block;  
+      justify-content: space-around;
+      
+
+    }
+   
+  
+  .Footer { grid-area: Footer;
+   }
+
+   .Menu ul {list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+   }
