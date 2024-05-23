@@ -16,28 +16,71 @@
       <img class="logo_Alquimistica" src="../MULTIMEDIA/logo_Alquimistica.png" alt="logo_Alquimistica">
 
       <!--Barra de navegación-->
-      <nav>
-        <ul class="Menu">
+      <nav class="Menu">
+        <ul>
             <li>
-                <a class="link--menu" href="../index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
 
             <li>
-                <a class="link--menu" href="./pagina2_barras.html">Barras</a>
+                <a  href="./pagina2_barras.html">Barras</a>
             </li>
 
             <li>
-                <a class="link--menu" href="./pagina3_reiki.html">Reiki</a>
+                <a href="./pagina3_reiki.html">Reiki</a>
             </li>
 
             <li>
-                <a class="link--menu" href="./pagina4_oraculo.html">Oráculo</a>
+                <a  href="./pagina4_oraculo.html">Oráculo</a>
             </li>
 
         </ul>
       </nav>
 
     </header>
+
+    <main>
+        <form action="">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" placeholder="Maria">
+            </div>
+            <br>
+            <div>
+                <label for="surname"> Apellido</label>
+                <input type="text" name="surname" placeholder="Perez">
+            </div>
+            <br>
+            <div>
+                <label for="mail"> *E-mail </label>
+                <input type="email" name="email" required>
+        
+            </div>
+            <br>
+            <div>
+                <label for="Phone"> Teléfono</label>
+                <input type="phone" name="phone" required> 
+            </div>
+            <br>
+            <div>
+                <label for="Terapia"> Selecciona tu Terapia</label>
+                <select name="Terapias" id="">
+                    <option value="Barras">Barras</option>
+                    <option value="Oraculo">Oraculo</option>
+                    <option value="Reiki">Reiki</option>
+                </select>
+            </div>
+
+            <br>
+            <div>
+                <input type="submit" value="Agendar">
+                <input type="submit" value="Borrar">
+
+            </div>
+
+        </form>
+
+    </main>
     
 </body>
 </html>

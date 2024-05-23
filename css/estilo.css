@@ -105,8 +105,25 @@ p{
   .Footer { grid-area: Footer;
    }
 
-   .Menu ul {list-style-type: none;
+   
+
+   .Menu ul {
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-around;
 
-   }
+}
+
+.header__nav ul li{
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.header__nav ul li a{
+    color: #491b74;
+    text-decoration: none;
+    padding: 0.7rem;
+
+}
+
