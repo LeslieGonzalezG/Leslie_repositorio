@@ -36,7 +36,7 @@ p{
     width: 90%;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1.3fr 0.6fr; 
+    grid-template-rows: min-content 1fr 1.3fr 0.4fr; 
     gap: 5px 5px; 
     grid-template-areas: 
       "HEADER HEADER"
@@ -81,7 +81,10 @@ p{
 
 
   .Main { grid-area: Main;
-  background-color: #ffffff;
+    margin:auto;
+    text-align: center;
+    background-color: #ffffff;
+    
    
  }
   .Aside { grid-area: Aside;
@@ -90,19 +93,28 @@ p{
 
   .Article { grid-area: Article;
    padding: 3rem;
-    display: inline-block; 
-    justify-content: space-around;}
+    display: flex; 
+    justify-content: space-around;
+   }
 
     .card{
       height:auto;
-      display: inline-block;  
+      display: flex;  
       justify-content: space-around;
+      min-height: 300px;
       
 
+    }
+
+    .terapia_sub{
+      display: flex;
+      align-self: flex-start;
+      
     }
    
   
   .Footer { grid-area: Footer;
+    background-color: #3f3e3f;
    }
 
    
@@ -115,15 +127,31 @@ p{
 
 }
 
-.header__nav ul li{
+.Menu ul li{
     border-radius: 10px;
     text-decoration: none;
 }
 
-.header__nav ul li a{
+.Menu ul li a{
     color: #491b74;
     text-decoration: none;
     padding: 0.7rem;
 
 }
 
+/*Estilo formulario*/
+.formulario{
+  width: 600px;
+  margin:20px;
+  padding: 40px;
+  
+}
+
+.foto_form{
+  width:300px;
+  
+}
+
+.main{
+  display: inline-block;
+}
