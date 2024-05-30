@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="./MULTIMEDIA/favicon_alquimistica32x32.png" type="favicon_alquimistica">
+    <link
+      rel="shortcut icon"
+      href="./MULTIMEDIA/favicon_alquimistica32x32.png"
+      type="favicon_alquimistica"
+    />
 
     <!--Link bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <!--Link hoja de estilo propia-->
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css" />
 
     <title>Alquimistica</title>
+  </head>
 
+  <body>
+    <div class="contenedor">
+      <header class="HEADER">
+        <img
+          class="logo_Alquimistica"
+          src="./MULTIMEDIA/logo_Alquimistica.png"
+          alt="logo_Alquimistica"
+        />
 
-</head>
+        <!--Barra de navegación-->
+        <nav class="nav-Header">
+          <ul>
+            <li>
+              <a href="./Pages/pagina2_barras.html"> Barras de access </a>
+            </li>
 
-<body>
- 
+            <li>
+              <a href="./Pages/pagina3_reiki.html"> Reiki</a>
+            </li>
 
-  <div class="contenedor">
-    <header class="HEADER">
-      
-        
-            <img class="logo_Alquimistica" src="./MULTIMEDIA/logo_Alquimistica.png" alt="logo_Alquimistica">
-           
-         
-           <!--Barra de navegación-->
-           <nav class="nav-Header">
-             <ul > 
-               <li>
-                   <a  href="./Pages/pagina2_barras.html"> Barras de access </a>
-               </li>
-           
-               <li>
-                   <a href="./Pages/pagina3_reiki.html"> Reiki</a>
-               </li>
-       
-               <li>
-                   <a  href="./Pages/pagina4_oraculo.html">Oráculo</a>
-               </li>
-       
-               <li>
-                   <a  href="./Pages/agendar.html">Agendar cita </a>
-               </li>
-       
-             </ul>       
-       
-           </nav>
-       
-     </header>
+            <li>
+              <a href="./Pages/pagina4_oraculo.html">Oráculo</a>
+            </li>
 
-     
-    <main class="Main">
-       
-    
+            <li>
+              <a href="./Pages/agendar.html">Agendar cita </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="Main">
         <h1>Alquimística</h1>
-        <h2>Un camino de transmutación para el alma </h2>
-           <p>Somos un espacio de transmutación en el cuál buscamos la integración  y reconocimiento de los seres a través de las experiencias de la vida misma.</p>
-         
+        <h2>Un camino de transmutación para el alma</h2>
+        <p>
+          Somos un espacio de transmutación en el cuál buscamos la integración y
+          reconocimiento de los seres a través de las experiencias de la vida
+          misma.
+        </p>
+      </main>
 
-    </main>
+      <aside class="Aside">
+        <img
+          class="img_main"
+          src="./MULTIMEDIA/meditacion_.jpg"
+          alt="meditacion_"
+        />
+      </aside>
 
-    <aside class="Aside">
-       
-        <img class="img_main" src="./MULTIMEDIA/meditacion_.jpg" alt="meditacion_">
+      <article>
+        <h1 class="terapia_sub">Nuestras Terapias</h1>
+        <p>
+          Contamos con distintas terapias para ayudarte en tu camino de
+          transmutación
+        </p>
 
-    </aside>
+        <section class="contenedorCartas">
+          <!--Cards -->
 
+          <div class="card" style="width: 18rem">
+            <img
+              src="./MULTIMEDIA/access.jpg"
+              class="card-img-top"
+              alt="barras_access"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Barras de Access Consciousness</h5>
+              <p class="card-text">
+                Las Barras de Access son 32 puntos en tu cabeza que al tocarlos,
+                liberan confacilidad creencias, emociones que te impiden crear l
+                vida que amas.
+              </p>
+              <a href="./Pages/pagina2_barras.html" class="btn btn-primary"
+                >Agendar</a
+              >
+            </div>
+          </div>
 
-    <div class="Article">
-      <h1 class="terapia_sub">Nuestras terapias</h1>
-      <p>Contamos con distintas terapias para ayudarte en tu camino de transmutación.</p>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./MULTIMEDIA/energia_reiki.jpg"
+              class="card-img-top"
+              alt="Reiki"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reiki</h5>
+              <p class="card-text">
+                Conecta con la energía vital del universo a través de la
+                imposición de manos y ayuda a equilibrar tu cuerpo, mente y
+                emociones.
+              </p>
+              <a href="./Pages/pagina3_reiki.html" class="btn btn-primary"
+                >Agendar</a
+              >
+            </div>
+          </div>
 
-      <!--Cards-->
-      <div class="card" style="width: 18rem;">
-  <img src="./MULTIMEDIA/access.jpg" class="card-img-top" alt="barras_access">
-  <div class="card-body">
-    <h5 class="card-title">Barras de Access Consciousness</h5>
-    <p class="card-text">Las barras de Access son 32 puntos en tu cabeza que, cuando los tocas gentilmente, liberan, sin esfuerzo y con facilidad, los pensamientos, las ideas, las creencias, las emociones, y las consideraciones que te impiden crear una vida que amas.</p>
-    <a href="./Pages/pagina2_barras.html" class="btn btn-primary">Agendar</a>
-  </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./MULTIMEDIA/foto_oraculo_1.jpg"
+              class="card-img-top"
+              alt="Oraculo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Oráculo</h5>
+              <p class="card-text">
+                Recibe mensaje de los seres de luz que te acompañan a través de
+                las cartas de Oráculo
+              </p>
+              <a href="./Pages/pagina4_oraculo.html" class="btn btn-primary"
+                >Agendar</a
+              >
+            </div>
+          </div>
+        </section>
+      </article>
 
-</div>
-  
-   <div class="card" style="width: 18rem;">
-  <img src="./MULTIMEDIA/energia_reiki.jpg" class="card-img-top" alt="Reiki">
-  <div class="card-body">
-    <h5 class="card-title">Reiki</h5>
-    <p class="card-text">Técnica de sanación en la que através de la imposición de manos ayuda a reestablecer el bienestar físico, mental y espiritual</p>
-    <a href="./Pages/pagina3_reiki.html" class="btn btn-primary">Agendar</a>
-  </div>
-</div>
-   
-  <div class="card" style="width: 18rem;">
-  <img src="./MULTIMEDIA/cartas_oraculo.jpg" class="card-img-top" alt="Oráculo">
-  <div class="card-body">
-    <h5 class="card-title">Oráculos</h5>
-    <p class="card-text">Contácta con los seres de luz que te acompañan y recibe mensajes através de las cartas de Oráculo</p>
-    <a href="./Pages/pagina4_oraculo.html" class="btn btn-primary">Agendar</a>
-  </div>
-</div>
-
-
+      <div class="Footer"></div>
     </div>
-    <div class="Footer"></div>
-  </div>
-    
-  <!--script bootstrap-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--script bootstrap-->
 
-</body>
+    <script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    </script>
+  </body>
 </html>

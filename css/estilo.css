@@ -44,6 +44,27 @@ p{
       "Article Article"
       "Footer Footer"; 
   }
+
+  @media screen and (max-width:768px) {
+    .contenedor {
+      margin: auto;
+      width: 90%;
+      display: grid; 
+      grid-template-columns: 1fr ; 
+      grid-template-rows: min-content; 
+      gap: 5px 5px; 
+      grid-template-areas: 
+        "HEADER"
+        "Main"
+        "Article"
+        "Footer"; 
+    }
+    
+    
+    
+  }
+
+
   .HEADER { grid-area: HEADER;
    height:200px;
    background-color: #f4eef7;
@@ -91,24 +112,36 @@ p{
     display: flex;
     justify-content: right; }
 
-  .Article { grid-area: Article;
-   padding: 3rem;
+  .Article { 
+    grid-area: Article;
+    padding: 3rem;
     display: flex; 
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    
    }
 
+   .contenedorCartas{
+    display: flex;
+    justify-content: center;
+   }
+  
+   
     .card{
+      padding: 10px;
       height:auto;
       display: flex;  
       justify-content: space-around;
       min-height: 300px;
-      
+      }
 
-    }
+   
+     
 
     .terapia_sub{
       display: flex;
-      align-self: flex-start;
+      text-align: center;
       
     }
    
@@ -152,6 +185,47 @@ p{
   
 }
 
+.contenedorAgendar{
+  display: flex;
+  justify-content: center;
+}
+
 .main{
   display: inline-block;
+}
+
+.header{
+  padding: 80px;
+
+
+}
+
+.main_p{
+  width: 90%;
+  text-align: center;
+}
+
+.carrusel{
+  width:auto;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+
+
+.section_video{
+  padding: 100px;
+  display: inline-flex;
+  align-items: center;
+  
+
+  
+}
+
+.contenedorDropdown{
+  width:100%;
+  display: flex;
+  justify-content: center;
 }
